@@ -1,0 +1,60 @@
+html {
+  height: 100%;
+
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  min-width: 320px;
+
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Poppins", "Arial", sans-serif;
+  color: $text-color-basic;
+  font-weight: 500;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+
+  word-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.title {
+  font-weight: 700;
+}
+.btn {
+  font-size: inherit;
+  line-height: 24px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1144px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
